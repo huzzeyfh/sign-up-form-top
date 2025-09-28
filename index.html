@@ -7,21 +7,35 @@
     <title>Sign Up Form</title>
   </head>
   <body>
-
+    <!-- div-image -->
     <div class="div-img">
-      <img src="/assets/img.jpg" alt="an image" />
+      <!-- <img class="img" src="/assets/img.jpg" alt="an image" /> -->
+      <div>
+        <img
+          class="logo"
+          src="/assets/odin-lined.png"
+          alt="the odin project logo"
+        />
+        <p>ODIN</p>
+      </div>
     </div>
 
+    <!-- div-form -->
     <div class="div-form">
+      <!-- header -->
       <header class="header">
-        <p>This is what you've been looking for! A financial freedom.</p>
-        <p>Sign up now to get your freedom.</p>
+        <div class="header-p">
+          <p>This is what you've been looking for! A financial freedom.</p>
+          <p>Sign up now to get your freedom.</p>
+        </div>
       </header>
+
+      <!-- form -->
       <form action="">
         <fieldset>
           <legend>Let's do this!</legend>
 
-            <!-- Name -->
+          <!-- Name -->
           <div class="div-name">
             <label for="first-name">FIRST NAME</label>
             <input id="first-name" name="first-name" type="text" required />
@@ -46,13 +60,14 @@
             <label for="confirm-pass">CONFIRM PASSWORD</label>
             <input id="confirm-pass" name="confirm-pass" type="password" />
           </div>
-
         </fieldset>
+      </form>
 
+      <!-- button -->
+      <div class="button">
         <button>Create Account</button>
         <p>Already have an account? Log in</p>
-      </form>
+      </div>
     </div>
-
   </body>
 </html>
