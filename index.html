@@ -7,66 +7,76 @@
     <title>Sign Up Form</title>
   </head>
   <body>
-    <!-- div-image -->
-    <div class="div-img">
-      <!-- <img class="img" src="/assets/img.jpg" alt="an image" /> -->
-      <div>
-        <img
-          class="logo"
-          src="/assets/odin-lined.png"
-          alt="the odin project logo"
-        />
-        <p>ODIN</p>
-      </div>
-    </div>
-
-    <!-- div-form -->
-    <div class="div-form">
-      <!-- header -->
-      <header class="header">
-        <div class="header-p">
-          <p>This is what you've been looking for! A financial freedom.</p>
-          <p>Sign up now to get your freedom.</p>
+    <div class="wrapper">
+      <!-- div-image -->
+      <div class="div-img">
+        <!-- <img class="img" src="/assets/img.jpg" alt="an image" /> -->
+        <div>
+          <img
+            class="logo"
+            src="/assets/odin-lined.png"
+            alt="the odin project logo"
+          />
+          <p>ODIN</p>
         </div>
-      </header>
+      </div>
 
-      <!-- form -->
-      <form action="">
-        <fieldset>
-          <legend>Let's do this!</legend>
+      <!-- div-form -->
+      <div class="div-form">
+        <!-- header -->
+        <header class="header">
+          <div class="header-p">
+            <p>This is what you've been looking for! A financial freedom.</p>
+            <p>Sign up now to get your freedom.</p>
+          </div>
+        </header>
 
+        <!-- form -->
+        <form action="">
           <!-- Name -->
-          <div class="div-name">
-            <label for="first-name">FIRST NAME</label>
-            <input id="first-name" name="first-name" type="text" required />
+          <div>
+            <div class="first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input id="first-name" name="first-name" type="text" required />
+            </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input id="last-name" name="last-name" type="text" />
+            <div class="last-name">
+              <label for="last-name">LAST NAME</label>
+              <input id="last-name" name="last-name" type="text" />
+            </div>
           </div>
 
           <!-- Email and Phone Number -->
-          <div class="div-enum">
-            <label for="email">EMAIL</label>
-            <input id="email" name="email" type="email" required />
+          <div>
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input id="email" name="email" type="email" required />
+            </div>
 
-            <label for="phone">LAST NAME</label>
-            <input id="phone" name="phone" type="tel" />
+            <div class="phone">
+              <label for="phone">PHONE</label>
+              <input id="phone" name="phone" type="tel" />
+            </div>
           </div>
 
-          <div class="div-pass">
-            <label for="password">PASSWORD</label>
-            <input id="password" name="password" type="password" required />
-
-            <label for="confirm-pass">CONFIRM PASSWORD</label>
-            <input id="confirm-pass" name="confirm-pass" type="password" />
+          <!-- Password -->
+          <div>
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <input id="password" name="password" type="password" required />
+            </div>
+            <div class="confirm-pass">
+              <label for="confirm-pass">CONFIRM PASSWORD</label>
+              <input id="confirm-pass" name="confirm-pass" type="password" />
+            </div>
           </div>
-        </fieldset>
-      </form>
+        </form>
 
-      <!-- button -->
-      <div class="button">
-        <button>Create Account</button>
-        <p>Already have an account? Log in</p>
+        <!-- button -->
+        <div class="button">
+          <button>Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
       </div>
     </div>
   </body>
